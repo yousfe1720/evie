@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>evie — Your Personal AI Assistant | Callistox</title>
+<meta name="description" content="Meet evie, a personal AI assistant that understands your voice and works across your digital world to get things done. Launching 25 October 2026.">
+
+<meta property="og:title" content="evie — Your Personal AI Assistant | Callistox">
+<meta property="og:description" content="Talk to her. Give her a task. She works across your digital world to get it done. evie launches 25 October 2026.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://callistox.net/">
+<meta property="og:image" content="assets/evie-mark-dark.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="evie — Your Personal AI Assistant | Callistox">
+<meta name="twitter:description" content="Talk to her. Give her a task. She works across your digital world to get it done.">
+<meta name="twitter:image" content="assets/evie-mark-dark.png">
+
+<link rel="canonical" href="https://callistox.net/">
+<link rel="icon" type="image/png" href="assets/evie-mark-dark.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ================= NAVIGATION ================= -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" aria-label="Callistox, home" class="nav-brand">
+      <img src="assets/callistox-wordmark-dark.png" alt="Callistox" class="nav-logo">
+    </a>
+    <a href="#waitlistEmail" class="btn btn-primary btn-small">Join the waitlist</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="top">
+    <div class="hero-inner">
+      <img src="assets/evie-logo-dark.png" alt="evie" class="hero-evie-logo">
+      <h1 class="hero-title">Meet evie.<br>Your personal AI assistant.</h1>
+      <p class="hero-sub">Talk to her. Give her a task. She works across your digital world — inside the browser and beyond it — to get it done.</p>
+    </div>
+
+    <div class="hero-stage">
+      <div class="hero-frame">
+        <div class="hero-frame-bar">
+          <span></span><span></span><span></span>
+        </div>
+        <video
+          class="hero-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          poster="assets/evie-mark-dark.png"
+          aria-label="evie promotional video">
+          <source src="assets/evie-hero.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= GRAY BACKDROP: launch block + voice section ================= -->
+  <div class="gray-wrap">
+    <div class="launch-block">
+      <p class="launch-label">Time remaining until launch</p>
+
+      <div class="countdown-plain" id="countdown" aria-live="polite">
+        <span id="cd-days">00</span><span class="countdown-sep">:</span><span id="cd-hours">00</span><span class="countdown-sep">:</span><span id="cd-mins">00</span><span class="countdown-sep">:</span><span id="cd-secs">00</span>
+      </div>
+      <p class="countdown-launched" id="countdown-launched" hidden>evie is here.</p>
+
+      <p class="launch-date">on 25 October 2026</p>
+
+      <h2 class="signup-heading">Sign up to get the free version</h2>
+
+      <!-- Integrated Form -->
+      <form class="waitlist-form" id="waitlistForm" novalidate>
+
+        <label for="waitlistEmail" class="visually-hidden">Email address</label>
+        <input type="email" id="waitlistEmail" name="email" placeholder="Enter your email" required autocomplete="email">
+        <button type="submit" class="btn btn-primary" id="waitlistSubmit">Join the waitlist</button>
+
+        <!-- Honeypot: hidden from real visitors, bots tend to fill it in.
+             If it has a value on submit, we silently drop the request. -->
+        <input type="text" name="website" id="waitlistHoneypot" class="visually-hidden" tabindex="-1" autocomplete="off">
+
+      </form>
+
+      <!-- Feedback Message -->
+      <p class="waitlist-feedback" id="waitlistFeedback" role="status" aria-live="polite"></p>
+    </div>
+
+    <!-- ================= VOICE-FIRST ================= -->
+    <section class="section-voice" id="voice">
+      <h2 class="section-title">Just say what you need.</h2>
+      <p class="section-lead">No menus to learn. No interface to figure out. Speak to evie the way you'd speak to someone you trust with the task.</p>
+
+      <div class="voice-demo">
+        <p class="voice-line">"evie, prepare a presentation about our new product and organize the main points."</p>
+        <div class="voice-stages">
+          <div class="voice-stage"><span class="voice-stage-num">1</span>Understanding</div>
+          <div class="voice-stage"><span class="voice-stage-num">2</span>Planning</div>
+          <div class="voice-stage"><span class="voice-stage-num">3</span>Creating</div>
+          <div class="voice-stage"><span class="voice-stage-num">4</span>Delivering</div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="platform-row" role="group" aria-label="Download evie">
+    <button class="platform-btn" data-platform="macOS" aria-label="Download for macOS — coming soon">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.365 1.43c0 1.14-.437 2.14-1.19 2.98-.83.9-2.06 1.6-3.1 1.5-.15-1.1.42-2.24 1.16-3.03.82-.87 2.26-1.5 3.13-1.45zm3.02 16.13c-.5 1.16-.74 1.68-1.38 2.7-.9 1.42-2.16 3.2-3.72 3.22-1.39.02-1.75-.9-3.63-.9-1.88 0-2.28.88-3.66.92-1.55.05-2.73-1.53-3.63-2.95-2.03-3.18-3.6-8.99-1.5-12.9C3.87 6.13 5.5 5 7.24 4.97c1.44-.03 2.8.97 3.68.97.87 0 2.53-1.2 4.27-1.02.73.03 2.77.29 4.08 2.2-3.35 2.02-2.8 6.9.14 8.4z"/></svg>
+      <span>macOS</span>
+    </button>
+    <button class="platform-btn" data-platform="Windows" aria-label="Download for Windows — coming soon">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 5.5 10.4 4.5V11.4H3zM11.3 4.4 21 3V11.3H11.3zM3 12.6H10.4V19.5L3 18.5zM11.3 12.6H21V21L11.3 19.6z"/></svg>
+      <span>Windows</span>
+    </button>
+    <button class="platform-btn" data-platform="Android" aria-label="Download for Android — coming soon">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.6 9.48l1.84-3.18c.1-.18.04-.4-.13-.5-.18-.1-.4-.04-.5.13l-1.86 3.22a10.36 10.36 0 0 0-8.9 0L6.19 5.93c-.1-.17-.32-.23-.5-.13-.17.1-.23.32-.13.5L7.4 9.48C4.5 11.13 2.5 14.02 2.15 17.4h19.7c-.35-3.38-2.35-6.27-5.25-7.92zM7.5 15.15a1.13 1.13 0 1 1 0-2.26 1.13 1.13 0 0 1 0 2.26zm9 0a1.13 1.13 0 1 1 0-2.26 1.13 1.13 0 0 1 0 2.26z"/></svg>
+      <span>Android</span>
+    </button>
+    <button class="platform-btn" data-platform="iOS" aria-label="Download for iPhone and iOS — coming soon">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.365 1.43c0 1.14-.437 2.14-1.19 2.98-.83.9-2.06 1.6-3.1 1.5-.15-1.1.42-2.24 1.16-3.03.82-.87 2.26-1.5 3.13-1.45zm3.02 16.13c-.5 1.16-.74 1.68-1.38 2.7-.9 1.42-2.16 3.2-3.72 3.22-1.39.02-1.75-.9-3.63-.9-1.88 0-2.28.88-3.66.92-1.55.05-2.73-1.53-3.63-2.95-2.03-3.18-3.6-8.99-1.5-12.9C3.87 6.13 5.5 5 7.24 4.97c1.44-.03 2.8.97 3.68.97.87 0 2.53-1.2 4.27-1.02.73.03 2.77.29 4.08 2.2-3.35 2.02-2.8 6.9.14 8.4z"/></svg>
+      <span>iPhone / iOS</span>
+    </button>
+  </div>
+
+  <p>© <span id="year"></span> Callistox. All rights reserved.</p>
+  <p class="footer-eu">🇪🇺 Built in the European Union</p>
+</footer>
+
+<!-- ================= COMING SOON MODAL ================= -->
+<div class="modal" id="platformModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-card">
+    <button class="modal-close" data-close aria-label="Close">×</button>
+    <p class="modal-eyebrow">Coming soon</p>
+    <h3 class="modal-title" id="modalTitle">evie for <span id="modalPlatform">this platform</span></h3>
+    <p class="modal-body">We're finishing evie for this platform. Join the waitlist and we'll let you know the moment it's ready.</p>
+    <a href="#waitlistEmail" class="btn btn-primary" data-close>Join the waitlist</a>
+  </div>
+</div>
+
+<!-- ================= FLOATING SUCCESS CONFIRMATION ================= -->
+<div class="toast" id="successToast" role="status" aria-live="polite" hidden>
+  <div class="toast-card">
+    <button class="toast-close" id="toastClose" type="button" aria-label="Close">×</button>
+    <div class="toast-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    </div>
+    <div class="toast-text">
+      <p class="toast-title">Thanks for joining!</p>
+      <p class="toast-body">You're one of 10,000+ people on the evie waitlist. See you on October 25.</p>
+      <button class="btn btn-primary btn-small toast-btn" id="toastOk" type="button">Great</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/waitlist.js"></script>
+
+</body>
+</html>
