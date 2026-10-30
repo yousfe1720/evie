@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Get your CAL plan | Join the waitlist</title>
+<meta name="description" content="Review your CAL plan, add CAL Care if you want it, and join the waitlist.">
+<meta name="robots" content="noindex"><link rel="canonical" href="https://callistox.net/get/">
+<meta property="og:type" content="website"><meta property="og:title" content="Get your CAL plan">
+<meta property="og:description" content="Review your CAL plan, add CAL Care if you want it, and join the waitlist."><meta property="og:url" content="https://callistox.net/get/">
+<meta property="og:image" content="https://callistox.net/assets/brand/cal-og.png">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Get your CAL plan">
+<meta name="twitter:description" content="Review your CAL plan, add CAL Care if you want it, and join the waitlist."><meta name="twitter:image" content="https://callistox.net/assets/brand/cal-og.png">
+<meta name="theme-color" content="#FAFAF9">
+<link rel="icon" type="image/svg+xml" href="../assets/brand/favicon.svg">
+<link rel="preload" href="../assets/fonts/poppins-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<script>(function(){var d=document.documentElement;d.classList.remove('no-js');try{var t=localStorage.getItem('cal-theme')||'light';d.dataset.theme=t}catch(e){d.dataset.theme='light'}})()</script>
+<link rel="stylesheet" href="../css/cal.css">
+</head>
+<body class="gbody">
+<a class="skip" href="#main">Skip to content</a>
+<div class="g-logo"><a class="logo logo-cx" href="../index.html" aria-label="Callistox home"><img class="l-light" src="../assets/brand/callistox-wordmark-ink.png" alt="Callistox" width="133" height="28"><img class="l-dark" src="../assets/brand/callistox-wordmark-white.png" alt="" aria-hidden="true" width="133" height="28"></a></div>
+<main id="main"><section class="gp"><div class="glow" aria-hidden="true"></div><div class="wrap">
+<div class="gcard" id="gcard">
+<div class="g-brand"><img src="../assets/brand/favicon.svg" alt="" width="44" height="44"><div><b>CAL</b><span>Waitlist</span></div></div>
+<h1 id="g-title">Get Executive</h1>
+<p class="g-lead">Review your plan, add CAL Care if you want it, and join the waitlist. Nothing is billed today.</p>
+<div class="g-bill"><div class="seg" role="group" aria-label="Billing period"><button type="button" aria-pressed="true" data-b="m" aria-selected="true">Monthly</button><button type="button" aria-pressed="false" data-b="y" aria-selected="false">Yearly (20% off)</button></div></div>
+<div class="gbox">
+<h2 id="g-plan">Executive &middot; $49/month</h2>
+<p class="g-tag" id="g-tag"></p>
+<ul id="g-feat"></ul>
+<div class="gcare" id="gcare">
+<div class="gcare-row"><button class="gcare-add" id="care-add" type="button" aria-pressed="false"><span class="pl" aria-hidden="true">+</span><span id="care-add-t">Add CAL Care</span></button><button class="gcare-cust" id="care-cust" type="button" aria-expanded="false" aria-controls="care-panel" hidden>Customize</button></div>
+<p class="gcare-note" id="care-note">Add CAL Care to your plan. Take only the parts you need, and choose how many people you care for.</p>
+<div class="gpanel" id="care-panel"><div><div class="gmods" id="care-mods"></div></div></div>
+</div>
+<div class="gsum" id="gsum" aria-live="polite"></div>
+</div>
+<button class="btn btn-primary g-cta" id="g-wait" type="button">Add to waitlist</button>
+<a class="g-back" href="../pricing/index.html">Back to pricing</a>
+<p class="g-fine">CAL Care is not a medical device and not a replacement for emergency services. Prices are launch estimates and may change.</p>
+</div></div></section>
+<div class="gmodal" id="gmodal" hidden><div class="gdlg" role="dialog" aria-modal="true" aria-labelledby="gm-title">
+<h2 id="gm-title">Add to waitlist</h2>
+<p class="g-lead">Enter your email and we will save your place with the choices below.</p>
+<div class="gsummary" id="gm-sum"></div>
+<form id="gform" novalidate>
+<div class="field"><label for="gm-email">Email address</label><input id="gm-email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="you@example.com" required><div class="err" aria-live="polite"></div></div>
+<p class="g-fine" style="text-align:left;margin:0 0 12px">We will only email you about CAL access, and you can unsubscribe at any time. See the <a href="../privacy-policy/index.html">Privacy Policy</a>.</p>
+<div class="gdlg-btns"><button class="btn btn-ghost" type="button" id="gm-cancel">Cancel</button><button class="btn btn-primary" type="submit" id="gm-done">Done</button></div>
+<div class="status" role="status"></div></form></div></div></main><script src="../js/config.js"></script>
+<script>
+(function(){
+var CFG=window.CAL_CONFIG||{};
+var PLANS={
+ free:{n:'Free',m:0,y:0,unit:'/month',tag:'Try CAL with a limited set of everyday features.',care:false,f:['1 device at a time','Everyday chat and answers, with a daily limit','A few web searches each day','Reminders and simple notes','Sign language, live captions and translation','1 GB of private cloud storage','Works while your device is on']},
+ personal:{n:'Personal',m:20,y:16,unit:'/month',tag:'Your everyday assistant on your own device.',care:true,f:['Up to 5 external devices','Reads your email and searches the web','Joins meetings silently and takes notes','Makes reservations and bookings','Messages you on WhatsApp (text)','Reads your screen when you ask','Always on: tasks keep running with your laptop off','5 GB of private cloud storage']},
+ executive:{n:'Executive',m:49,y:39,unit:'/month',tag:'Your AI executive assistant for work.',care:true,f:['4 computers and 3 phones at the same time','Everything in Personal','Phone calls on your behalf: 2 hours a month included','Joins meetings and speaks for you (participants are told)','Schedules and coordinates appointments','WhatsApp text, voice notes and calls','20 home devices over Wi-Fi and Bluetooth','20 GB of private cloud storage']},
+ super:{n:'Super',m:99,y:79,unit:'/month',tag:'Everything in CAL, in one plan.',care:true,incl:2,f:['Work, home and care in one plan','Everything in Executive','CAL Care included: all modules for 2 care profiles','6 computers and 100 external devices','Offline mode for tasks that run on your device','Up to 100 GB of storage with daily backups kept for 14 days','3 hours of calls a month included']},
+ 'team-starter':{n:'Starter',m:120,y:96,unit:'/month per team',tag:'For startups and small teams.',care:false,nocare:true,f:['3 seats included, extra seats +$40','Executive for every seat','Shared limits: 12 computers, 9 phones, 60 external devices','6 hours of calls and 60 GB of storage, shared by the team','Central billing and administration','Single sign-on (SAML and OIDC)']},
+ kids:{n:'CAL Kids',m:25,y:20,unit:'/month',tag:'A safer screen and a friendly companion for children up to 14.',care:false,nocare:true,f:['Active Screen Shield: closes unsuitable pages and alerts you','Interactive Companion: hover and ask "Hey CAL, what is this?"','Screen-time and Focus: gentle limits for play and school tasks','Parents Dashboard: a private weekly summary','Built for children and teens up to 14']},
+ 'team-business':{n:'Business',m:170,y:136,unit:'/month per team',tag:'For growing teams.',care:false,nocare:true,f:['5 seats included, extra seats +$34','Everything in Starter','Shared limits: 20 computers, 15 phones, 100 external devices','8 hours of calls and 100 GB of storage, shared by the team','50 connected accounts','Custom chat data retention and mixed seat types']}
+};
+var MODS=[
+ {k:'base',n:'Care base',d:'Reminders, daily routine, translation, sign language and live captions.',m:12},
+ {k:'family',n:'Family updates',d:'Updates for the family and caregivers you choose, always with consent.',m:3},
+ {k:'emergency',n:'Emergency response',d:'Contacts your emergency contact or service and explains the situation.',m:4},
+ {k:'health',n:'Health devices',d:'Works with compatible medical and health devices.',m:3},
+ {k:'vision',n:'Vision (optional)',d:'Camera-based understanding, only with your explicit consent.',m:3}
+];
+var qs=new URLSearchParams(location.search);
+var key=qs.get('plan');
+if(key==='enterprise'||key==='dev'){location.replace('../contact/index.html?topic='+(key==='dev'?'developer':'sales'));return;}
+if(!PLANS[key])key='executive';
+var P=PLANS[key];
+var st={b:qs.get('b')==='y'?'y':'m',care:false,mods:{base:true,family:false,emergency:false,health:false,vision:false},people:1};
+if(P.incl){st.care=true;st.people=P.incl;MODS.forEach(function(m){st.mods[m.k]=true;});}
+function $(s,r){return (r||document).querySelector(s)}
+function money(n){n=Math.round(n*100)/100;return '$'+(Number.isInteger(n)?n:n.toFixed(2));}
+function mp(m){return st.b==='y'?m*0.8:m}
+function compute(){
+ var planP=P[st.b];
+ var sum=0;MODS.forEach(function(m){if(st.mods[m.k])sum+=mp(m.m);});
+ var billable=P.incl?Math.max(0,st.people-P.incl):st.people;
+ var careP=st.care?sum*billable:0;
+ return {plan:planP,sum:sum,care:careP,total:planP+careP,billable:billable};
+}
+function selNames(){return MODS.filter(function(m){return st.mods[m.k]}).map(function(m){return m.n});}
+function render(){
+ var c=compute();
+ $('#g-title').textContent='Get '+P.n;
+ document.title='Get '+P.n+' | Join the CAL waitlist';
+ $('#g-plan').innerHTML=P.n+' &middot; '+money(c.plan)+P.unit+(P.m?(st.b==='y'?' <span class="muted" style="font-weight:400">(billed yearly)</span>':''):'');
+ $('#g-tag').textContent=P.tag;
+ $('#g-feat').innerHTML=P.f.map(function(x){return '<li>'+x+'</li>'}).join('');
+ document.querySelectorAll('.g-bill .seg button').forEach(function(b){var on=b.dataset.b===st.b;b.setAttribute('aria-pressed',on);b.setAttribute('aria-selected',on);});
+ var add=$('#care-add'),cust=$('#care-cust'),note=$('#care-note');
+ $('#gcare').hidden=!!P.nocare;
+ if(!P.care){add.hidden=true;cust.hidden=true;note.textContent='CAL Care can be added from the Personal plan and up.';$('#care-panel').classList.remove('open');}
+ else{
+  add.hidden=false;
+  add.setAttribute('aria-pressed',st.care);
+  $('#care-add-t').textContent=P.incl?'CAL Care included':(st.care?'CAL Care added':'Add CAL Care');
+  add.querySelector('.pl').innerHTML=st.care?'&#10003;':'+';
+  if(P.incl)add.disabled=true;
+  cust.hidden=!st.care;
+  var names=selNames();
+  note.textContent=st.care?('CAL Care: '+(names.length?names.join(', '):'no parts selected yet')+' for '+st.people+(st.people===1?' person.':' people.')+(P.incl?' Your plan includes '+P.incl+' care profiles.':'')):'Add CAL Care to your plan. Take only the parts you need, and choose how many people you care for.';
+  if(!st.care){$('#care-panel').classList.remove('open');cust.setAttribute('aria-expanded','false');}
+ }
+ var mods=MODS.map(function(m){var on=st.mods[m.k];
+  return '<div class="gmod"><b>'+m.n+'</b><div class="gr"><span class="gprice">'+(P.incl?'Included':'+'+money(mp(m.m))+'/mo')+'</span><button type="button" class="gsw" role="switch" aria-checked="'+on+'" data-mod="'+m.k+'" aria-label="'+m.n+'"></button></div><small>'+m.d+'</small></div>';}).join('');
+ mods+='<div class="gmod people"><b>People you care for</b><div class="gr"><div class="gstep"><button type="button" data-ppl="-1" aria-label="Fewer people"'+(st.people<=1?' disabled':'')+'>&minus;</button><output>'+st.people+'</output><button type="button" data-ppl="1" aria-label="More people"'+(st.people>=10?' disabled':'')+'>+</button></div></div><small>The price of the selected parts applies to each person'+(P.incl?' beyond the '+P.incl+' included':'')+'.</small></div>';
+ $('#care-mods').innerHTML=mods;
+ var s='<div><span>'+P.n+'</span><b>'+(P.m?money(c.plan)+P.unit:'Free')+'</b></div>';
+ s+='<div><span>CAL Care'+(st.care?' ('+st.people+(st.people===1?' person':' people')+')':'')+'</span><b>'+(st.care?(P.incl&&c.care===0?'Included':'+'+money(c.care)+'/month'):'Not added')+'</b></div>';
+ s+='<div class="gtot"><span>Estimated total</span><b>'+money(c.total)+'/month</b></div>';
+ if(st.b==='y'&&c.total>0)s+='<small>Billed yearly: '+money(c.total*12)+' a year</small>';
+ $('#gsum').innerHTML=s;
+}
+function summary(){
+ var c=compute();
+ return {plan:P.n,billing:st.b==='y'?'Yearly':'Monthly',plan_price:P.m?money(c.plan)+P.unit:'Free',care:st.care?'Yes':'No',care_parts:st.care?selNames().join(', '):'',care_people:st.care?String(st.people):'0',care_price:st.care?money(c.care)+'/month':'$0',total:money(c.total)+'/month'};
+}
+function line(o){return 'Plan: '+o.plan+' ('+o.billing+', '+o.plan_price+') | CAL Care: '+(o.care==='Yes'?o.care_parts+' for '+o.care_people+' people, '+o.care_price:'No')+' | Estimated total: '+o.total;}
+document.addEventListener('click',function(e){
+ var t=e.target.closest('button');if(!t)return;
+ if(t.dataset.b&&t.closest('.g-bill')){st.b=t.dataset.b;render();return;}
+ if(t.id==='care-add'&&!P.incl){st.care=!st.care;render();if(st.care){$('#care-panel').classList.add('open');$('#care-cust').setAttribute('aria-expanded','true');}return;}
+ if(t.id==='care-cust'){var o=$('#care-panel').classList.toggle('open');t.setAttribute('aria-expanded',o);return;}
+ if(t.dataset.mod){st.mods[t.dataset.mod]=!st.mods[t.dataset.mod];render();return;}
+ if(t.dataset.ppl){st.people=Math.min(10,Math.max(1,st.people+parseInt(t.dataset.ppl,10)));render();return;}
+});
+render();
+/* ---- waitlist modal ---- */
+var modal=$('#gmodal'),form=$('#gform'),status=$('.status',form),done=$('#gm-done'),last=null;
+function openM(){
+ var o=summary();
+ var rows=[['Plan',o.plan+' ('+o.billing.toLowerCase()+')'],['Plan price',o.plan_price],['CAL Care',o.care==='Yes'?o.care_parts+' for '+o.care_people+(o.care_people==='1'?' person':' people'):'Not added']];
+ if(o.care==='Yes')rows.push(['CAL Care price',o.care_price]);
+ rows.push(['Estimated total',o.total]);
+ $('#gm-sum').innerHTML=rows.map(function(r){return '<div><span>'+r[0]+'</span><b>'+r[1]+'</b></div>'}).join('');
+ status.className='status';status.textContent='';
+ modal.hidden=false;last=document.activeElement;setTimeout(function(){$('#gm-email').focus()},30);
+}
+function closeM(){modal.hidden=true;if(last)last.focus();}
+$('#g-wait').addEventListener('click',openM);
+$('#gm-cancel').addEventListener('click',closeM);
+modal.addEventListener('click',function(e){if(e.target===modal)closeM();});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!modal.hidden)closeM();});
+function say(msg,cls){status.textContent=msg;status.className='status show '+cls;}
+form.addEventListener('submit',function(e){
+ e.preventDefault();status.className='status';
+ var inp=$('#gm-email'),err=$('.err',form),v=inp.value.trim();err.textContent='';inp.setAttribute('aria-invalid','false');
+ if(!v){err.textContent='Please enter your email address.';inp.setAttribute('aria-invalid','true');inp.focus();return;}
+ if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)){err.textContent='That email address doesn\u2019t look right.';inp.setAttribute('aria-invalid','true');inp.focus();return;}
+ var url=CFG.WAITLIST_ENDPOINT;
+ if(!url){say('The waitlist isn\u2019t connected to a registration service yet, so your email was not saved. Please try again later.','bad');return;}
+ var o=summary();
+ var body=new URLSearchParams();
+ var data={email:v,use:line(o),consent:true,source:location.pathname,form:'waitlist',plan:o.plan,billing:o.billing,plan_price:o.plan_price,care:o.care,care_parts:o.care_parts,care_people:o.care_people,care_price:o.care_price,total:o.total};
+ Object.keys(data).forEach(function(k){body.append(k,data[k]);});
+ done.disabled=true;var label=done.textContent;done.textContent='Sending\u2026';
+ fetch(url,{method:'POST',body:body}).then(function(r){if(!r.ok)throw new Error(r.status);return r.json();}).then(function(out){
+  if(!out||out.result!=='success')throw new Error('failed');
+  say('You\u2019re on the list. Taking you back to the home page\u2026','ok');
+  setTimeout(function(){location.href='../index.html';},1600);
+ }).catch(function(){say('Something went wrong and your details were not saved. Please try again in a moment.','bad');done.disabled=false;done.textContent=label;});
+});
+})();
+</script>
+</body></html>
